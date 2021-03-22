@@ -23,7 +23,7 @@ echo -e "\e[97m                      ______
         "
 cd $HOME
 rm -rf LordPhish
-git clone https://github.com/grenoxx/LordPhish
+git clone https://github.com/Black-Hell-Team/LordPhish
 clear
 echo ""
 echo -e "$red [ $yellow + $red ] $green LordPhish was successfully updated. $resetcollor"
