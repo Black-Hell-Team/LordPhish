@@ -94,6 +94,7 @@ user_interrupt(){
         printf " \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;96m Visit github.com/grenoxx \e[0m"
         printf "\e[0m\n"
         exit 1
+        fi
 }              
 
 smail_banner() {
