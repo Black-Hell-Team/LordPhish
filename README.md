@@ -22,7 +22,7 @@ apt-get install wget -y
 
 apt-get install git -y
 
-git clone https://github.com/grenoxx/LordPhish.git
+git clone https://github.com/Black-Hell-Team/LordPhish.git
 
 cd LordPhish
 
