@@ -7,8 +7,15 @@ And I'm create the most complete phishing tool
 <img src="https://img.shields.io/github/issues/Black-Hell-Team/LordPhish?color=red&style=flat-square">
 <img src="https://img.shields.io/github/forks/Black-Hell-Team/LordPhish?color=teal&style=flat-square">
 
-
-<p>
+## Tested On:
+Arch 5.11.2 
+Debian 9: 4.9.0-8-amd64
+Debian 10: 4.19.0-8-amd64
+Ubuntu 18.04.1 LTS: 4.15.0-38-generic
+Kali Linux: 4.18.0-kali2-amd64
+Centos 6.10: 2.6.32-754.6.3.el6.x86_64
+Centos 7: 3.10.0-862.3.2.el7.x86_64
+Centos 8: 4.18.0-147.5.1.el8_1.x86_64
 
 ### Usage:
 ```
