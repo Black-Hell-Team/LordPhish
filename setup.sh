@@ -1,24 +1,24 @@
 #!/usr/bin/env bash
 
 install() {
-    echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing required packages..."
+    echo -e "\n[*] Installing required packages..."
 
     if [[ -d "/data/data/com.termux/files/home" ]]; then
         if [[ `command -v proot` ]]; then
             printf ''
         else
-			echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}proot${CYAN}"${WHITE}
+			echo -e "\n[*] Installing package : proot "
             pkg install proot resolv-conf -y
         fi
     fi
 
 	if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
-		echo -e "\n${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
+		echo -e "\n[*] Packages already installed."
 	else
 		pkgs=(php curl wget unzip)
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
-				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
+				echo -e "\n[*] Installing package : $pkg"
 				if [[ `command -v pkg` ]]; then
 					pkg install "$pkg"
 				elif [[ `command -v apt` ]]; then
@@ -30,7 +30,7 @@ install() {
 				elif [[ `command -v dnf` ]]; then
 					sudo dnf -y install "$pkg"
 				else
-					echo -e "\n${RED}[${WHITE}!${RED}]${RED} Unsupported package manager, Install packages manually."
+					echo -e "\n[!] Unsupported package manager, Install packages manually."
 					{ reset_color; exit 1; }
 				fi
 			}
