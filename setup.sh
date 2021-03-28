@@ -32,6 +32,7 @@ install() {
     fi
 
 	if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
+	        chmod +x lord.sh
 		echo -e "\n[*] Packages already installed."
 	else
 		pkgs=(php curl wget unzip)
