@@ -8,6 +8,8 @@ And I'm create the most complete phishing tool
 <img src="https://img.shields.io/github/forks/Black-Hell-Team/LordPhish?color=teal&style=flat-square">
 
 ## Tested On:
+Android 9: 4.4.111-17263988
+
 Arch 5.11.2 
 
 Debian 9: 4.9.0-8-amd64
