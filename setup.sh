@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+red='\e[1;31m'
+
+smail_banner() {
+printf "\n"
+printf "\n"
+printf "${red}█░░ █▀█ █▀█ █▀▄ █▀█ █░█ █ █▀ █░█\n"
+printf "${red}█▄▄ █▄█ █▀▄ █▄▀ █▀▀ █▀█ █ ▄█ █▀█\n"
+printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.  \e[0m\n"
+printf "\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
+printf "\n"
+printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
+printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by LordPhish.  ::\e[0m\n"
+printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
+printf "\n"
+printf "     \e[101m\e[1;77m:: Attacking targets without mutual consent is illegal!      ::\e[0m\n"
+printf "\n"   
+}
+
 install() {
     echo -e "\n[*] Installing required packages..."
 
@@ -31,7 +50,7 @@ install() {
 					sudo dnf -y install "$pkg"
 				else
 					echo -e "\n[!] Unsupported package manager, Install packages manually."
-					{ reset_color; exit 1; }
+					{ exit 1; }
 				fi
 			}
 		done
@@ -74,6 +93,7 @@ fi
 fi
 }
 
+smail_banner
 install
 autenticatengrok
 
