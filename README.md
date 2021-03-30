@@ -42,6 +42,8 @@ git clone https://github.com/Black-Hell-Team/LordPhish.git
 
 cd LordPhish
 
+bash setup.sh 
+
 bash lord.sh
 ```
 
