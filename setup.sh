@@ -2,6 +2,13 @@
 
 red='\e[1;31m'
 
+UnzipFiles(){
+    command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
+    printf "\e[1;93m [!] Unzipping files ...!\e[0m\n"
+    sleep 1.9
+    nohup unzip sites.zip > /dev/null &
+    mv webpages .webpages
+}
 smail_banner() {
 printf "\n"
 printf "\n"
@@ -58,10 +65,10 @@ install() {
 	fi
 
 }
-autenticatengrok(){
+InstallNgrok(){
     if [[ -e ngrok ]]; then
     chmod +x ngrok
-    ./ngrok authtoken 1qOUjqGGqY2EU1oUlpNpJ9FRaGe_2CeS1bnxkmWbnSycWRZTD > /dev/null &
+
 else
     command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
     command -v wget > /dev/null 2>&1 || { echo >&2 "I require wget but it's not installed. Install it. Aborting."; exit 1; }
@@ -94,7 +101,8 @@ fi
 fi
 }
 
+UnzipFiles
 smail_banner
 install
-autenticatengrok
+InstallNgrok
 
