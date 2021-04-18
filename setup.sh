@@ -7,7 +7,6 @@ UnzipFiles(){
     printf "\e[1;93m [!] Unzipping files ...!\e[0m\n"
     sleep 1.9
     nohup unzip sites.zip > /dev/null &
-    rm sites.zip
 }
 smail_banner() {
 printf "\n"
