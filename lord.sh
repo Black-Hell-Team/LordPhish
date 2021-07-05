@@ -330,8 +330,10 @@ server="gmail"
 start1
 
 elif [[ $menu_option == 36 ]]; then
-server="tiktok"
-start1
+printf "\e[1;93m [!] Invalid option!\e[0m\n"
+sleep 2 
+menu
+
 
 elif [[ $menu_option == 37 ]]; then
 server="whatsapp"
