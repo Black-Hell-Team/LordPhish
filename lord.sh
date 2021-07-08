@@ -7,7 +7,6 @@
 # 68 Webpages !!!!!!
 
 # Tunneling opitions:
-# Serveo.net
 # ngrok
 # Localhost
 # LocalHostRun
@@ -111,7 +110,7 @@ echo
 echo
 printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.  \e[0m\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX/Ch4r0nN \e[0m\n"
+printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Ch4r0nN \e[0m\n"
 printf "\n"
 printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by LordPhish.  ::\e[0m\n"
@@ -128,7 +127,7 @@ printf "\n"
 echo -e $R"      ╔═══════════╗"
 echo -e "$R    ╔═╝$W███████████$R╚═╗"
 echo -e "$R   ╔╝$W███████████████$R╚╗"
-echo -e "$R   ║$W█████\033[1;32mGr3n0xX \033[00m\033[1;37m████$R║"
+echo -e "$R   ║$W█████\033[1;32mCh4r0nN \033[00m\033[1;37m████$R║"
 echo -e "$R   ║$W█████████████████$R║    \e[1;36m•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•. \e[00m\e[1;31m"
 echo -e "$R   ║$W█████████████████$R║            \e[30;48;5;196m\e[1;32m\e[1;36m Lord\e[0m \e[30;48;5;39m\e[1;31m Phish\e[0m\e[1;31m"
 echo -e "$R   ║$W█$R╔$W█████████████$R╗$W█$R║    \e[1;36m•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•. \e[00m\e[1;31m"
