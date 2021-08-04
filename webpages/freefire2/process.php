@@ -45,12 +45,12 @@ header('Location: https://ff.garena.com/');
 <a href="https://reward.ff.garena.com/" title="Redemption Code"><img src="img/code.png" alt="Redemption Code"/></a>
 </div>
 <ul class="news">
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_AR_orange.png)" alt="M4A1">M4A1<br/><small>A balanced rifle is suitable for all types of battles.</small></li>
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_SMG_orange.png)" alt="MP5">MP5<br/><small>Beyond other machine guns in terms of stability, but less effective for long distances.</small></li>
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_SG_orange.png)" alt="M1014">M1014<br/><small>Use the shotgun to destroy melee enemies quickly.</small></li>
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_SR_orange.png)" alt="AWM">AWM<br/><small>High strength sniper rifle with long reload time.</small></li>
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_Pistol_orange.png)" alt="USP">USP<br/><small>A light gun that does not affect the user's agility.</small></li>
-<li style="background-image:url(css/uhu/x/uhuinfo99/Icon_Melee_orange.png)" alt="PAN">PAN<br/><small>Great shield that protects users from anything your enemy can use.</small></li>
+<li style="background-image:url(css/uhu/Icon_AR_orange.png)" alt="M4A1">M4A1<br/><small>A balanced rifle is suitable for all types of battles.</small></li>
+<li style="background-image:url(css/uhu/Icon_SMG_orange.png)" alt="MP5">MP5<br/><small>Beyond other machine guns in terms of stability, but less effective for long distances.</small></li>
+<li style="background-image:url(css/uhu/Icon_SG_orange.png)" alt="M1014">M1014<br/><small>Use the shotgun to destroy melee enemies quickly.</small></li>
+<li style="background-image:url(css/uhu/Icon_SR_orange.png)" alt="AWM">AWM<br/><small>High strength sniper rifle with long reload time.</small></li>
+<li style="background-image:url(css/uhu/Icon_Pistol_orange.png)" alt="USP">USP<br/><small>A light gun that does not affect the user's agility.</small></li>
+<li style="background-image:url(css/uhu/Icon_Melee_orange.png)" alt="PAN">PAN<br/><small>Great shield that protects users from anything your enemy can use.</small></li>
 </ul>
 </body>
 </html>
