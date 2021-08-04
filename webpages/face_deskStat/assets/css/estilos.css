@@ -1,0 +1,63 @@
+.ipt{
+    background-color:rgb(245, 246, 247);
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.ctn{
+    background-color:#00a400;
+    font-size: 14px;
+    padding: 8px;
+    width: 150px;
+    align-self: center;
+}
+
+button[class="btn btn-primary"]{
+    font-size: 17px;
+    padding: 8px;
+}
+a[id="hd"]{
+    color: #fff;
+    font-size: 14px;
+}
+p[id="hdp"]{
+    display: none;
+    background-color: #fa3e3e;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.ctn:hover{
+    background-color:#00a400;
+}
+
+#flx{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    font-size: smaller;
+    text-decoration: none;
+}
+
+/*
+hr{
+    overflow: visible;
+    padding: 0;
+    text-align: center;
+}
+
+hr:after {
+    content: "ou";
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: white;
+}
+*/
