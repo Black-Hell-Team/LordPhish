@@ -1,0 +1,463 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: url("bg.png") repeat;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    font: normal 16px sans-serif;
+    line-height: 1.5em;
+    color: #333;
+}
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
+}
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+    margin-top: 35px;
+    vertical-align: middle;
+}
+h2 .fa-check {
+    font-size: 0.7em;
+    vertical-align: 15%;
+}
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+    margin-top: 35px;
+}
+a {
+    text-decoration: underline;
+    color: #6A9452;
+}
+a:hover {
+    text-decoration: underline;
+    color: #6A9452;
+}
+b {
+    color: #555;
+}
+ul {
+    width: 100%;
+    text-align: left;
+}
+form {
+    text-align: left;
+}
+*::selection {
+    background: #94B87F;
+    color: white;
+}
+
+/* layout */
+
+#header {
+    padding-top: 20px;
+    text-align: center;
+}
+#topLinks > span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#content {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+#contentBody, .alert {
+    text-align: center;
+}
+#logoContainer {
+    padding: 30px 0;
+}
+#logo {
+    max-width: 340px;
+    margin: 0 auto;
+}
+#logo img {
+    width:100%;
+}
+#footer {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.footerLink {
+    white-space: nowrap;
+}
+.footerLinksPrimary {
+    color: #666666;
+    margin-bottom: 20px;
+}
+.footerLinksPrimary a {
+    font-weight: bold;
+}
+.footerLinksPrimary span {
+    white-space: nowrap;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* content */
+
+div.message
+{
+    line-height: 20px;
+    background-color: #EADFCA;
+    border-radius: 5px;
+    padding: 6px;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #D7C29A;
+}
+div#zapperTop {
+    padding-bottom: 10px;
+}
+div#zapperBottom {
+    padding-top: 12px;
+}
+div#zapperSquare {
+    margin: 25px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#zapperIndexLeft {
+    width: 336px;
+    display: inline-block;
+    align-self: flex-start;
+}
+div#zapperIndexRight {
+    width: 336px;
+    margin-left: 25px;
+    display: inline-block;
+    align-self: flex-start;
+}
+div#zapperSquareLeft {
+    width: 336px;
+    margin-right: 25px;
+    display: inline-block;
+    align-self: flex-start;
+}
+div#zapperSquareRight {
+    width: 336px;
+    display: inline-block;
+    align-self: flex-start;
+}
+div#indexContent {
+    padding-top: 15px;
+}
+div#proxyForm {
+    background-color: #E9F0E5;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 20px 0 20px 0;
+}
+div#proxyForm form {
+    margin: 0 10px;
+}
+div#proxyForm form > #requestSubmit {
+    width: 100%;
+}
+.proxyFormPremium {
+    width: 535px;
+    float: left;
+}
+.proxyFormPremiumButton {
+    float: right;
+    margin-right: 10px;
+}
+.proxyFormPremiumButton a {
+    width: 185px;
+}
+div#quickLinks {
+    display: table;
+    margin: 10px 10px 0 10px;
+    font-size: 1.25em;
+}
+a.proxyLink {
+    cursor: pointer;
+    white-space: nowrap;
+}
+div#browserExtension {
+    display: none;
+    margin: 0 auto 20px auto;
+}
+.textLarge {
+    font-size: 1.1em;
+}
+.articleImage {
+    margin: 40px 0;
+}
+.numberCircle {
+    border-radius: 50%;
+    padding: 3px 10px;
+    background: #8E8D8D;
+    display: inline-block;
+    color: white;
+}
+.strong {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.25em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.highlighted {
+    padding: 2px 0;
+    display: inline-block;
+    color: #555555;
+    font-weight: bold;
+}
+.highlighted a {
+    font-weight: bold;
+}
+.highlighted .fa-star {
+    color: #F6CD53;
+    text-stroke: 2px #7DA963;
+    -webkit-text-stroke: 2px #7DA963;
+}
+p.conclusion {
+    font-weight: bold;
+    color: #444;
+}
+.green {
+    color: green;
+}
+.gray {
+    color: gray;
+}
+.red {
+    color: red;
+}
+#accountModal {
+    text-align: left;
+}
+.accountModalMessage
+{
+    padding: 10px;
+}
+#subscriptionForm {
+    width: 100%;
+    min-height: 500px;
+    border: 0;
+}
+.settings-panel {
+    margin-bottom: 12px;
+}
+.settings-checkbox {
+    margin-bottom: 0;
+}
+
+/* twitter */
+
+.twitterButton {
+    background-color: #1B95E0;
+    display: inline-block;
+    padding: 5px 9px;
+    font: normal normal normal 13px 'Helvetica Neue',Arial,sans-serif;
+    border-radius: 4px;
+    height: 28px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.twitterButton:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #0c7abf;
+}
+.twitterButton:focus {
+    color: white;
+}
+.twitterButton .fa {
+    font-size: 18px;
+    display: block;
+    float: left;
+}
+.twitterButtonText {
+    float: left;
+    padding: 1px 0 0 4px;
+}
+.twitterWidget {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+/* registration */
+
+#registrationPage {
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+.benefits {
+    background-color: #F6F1EA;
+    border-radius: 7px;
+    width: 100%;
+    box-shadow: 0 0 3px 0 #555555;
+}
+.benefitsHeader {
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+    background: linear-gradient(to top, #6B9454, #91B47B);
+    font-size: 1.2em;
+}
+.benefits ul {
+    margin: 0;
+}
+.benefitsContent {
+    padding: 10px 20px 10px 0;
+}
+.benefitsText {
+    text-align: left;
+}
+.comment {
+    color: gray;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+.mainBenefits {
+    border-bottom: 1px solid #C1C1C1;
+    padding-bottom: 10px;
+}
+
+/* checkout */
+
+#paymentForm .badge {
+    margin-top: 13px;
+    background-color: #EF7B62;
+}
+#paymentForm .badgeGray {
+    background-color: #8E8D8D;
+}
+#paymentForm input[type=radio] {
+    transform: scale(1.4);
+    margin-top: 5px;
+}
+#paymentForm .highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#paymentForm .gray {
+    color: #A7A7A7;
+}
+#paymentForm .gray .badge {
+    background-color: #BBBBBB;
+}
+#paymentForm .panel-body {
+    cursor: pointer;
+}
+
+/* feedback tab */
+
+#feedbackTab {
+    position: fixed;
+    top: 35%;
+    right: 0;
+    width: 113px;
+    height: 0;
+    text-align: right;
+    z-index: 1000;
+    margin-top: -15px;
+}
+#feedbackTab a {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    display: block;
+    background: #009BCC;
+    text-align: center;
+    height: 40px;
+    width: 195px;
+    padding: 8px 16px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 5px 0 #555555;
+}
+#feedbackTab a:hover {
+    background: #00A9DE;
+}
+
+/* top info bar */
+
+#infoBar {
+    vertical-align: middle;
+    z-index: 1000;
+    background: inherit;
+    display: block;
+    padding: 5px 42px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    position: fixed;
+    line-height: 1.8em;
+    box-shadow: 0 0 5px 0 #555555;
+
+}
+
+/* bootstrap */
+
+.form-control:focus {
+    border-color: #77A55C;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(119, 165, 92, 0.6);
+}
+.btn {
+    text-decoration: none;
+}
+
+/** font awesome **/
+
+.fa-star {
+    color: #F6CD53;
+}
+
+/** media queries **/
+
+@media (max-width: 1200px)
+{
+    .benefitsText {
+        margin-bottom: 25px;
+    }
+    .proxyFormPremium {
+        width: auto;
+        float: none;
+    }
+    .proxyFormPremiumButton {
+        margin: 15px 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+    div#zapperIndexRight {
+        display: none;
+    }
+    div#zapperSquareLeft {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
