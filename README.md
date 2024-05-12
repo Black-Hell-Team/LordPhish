@@ -73,7 +73,7 @@ Aurthor assumes that the users would use lordphish **legally**. Aurthor won't be
 
 ## Thanks :
 <code><a href="https://github.com/thelinuxchoice"><img src="https://img.shields.io/badge/Special Thanks-The Linux Choice-blue"></code></a>
-<code><a href="https://github.com/grenoxx"><img src="https://img.shields.io/badge/Thanks For Me-Gr3n0xX-blue"></code></a>
+<code><a href="https://github.com/Ch4r0oN"><img src="https://img.shields.io/badge/Thanks For Me-Gr3n0xX-blue"></code></a>
 <code><a href="https://github.com/htr-tech"><img src="https://img.shields.io/badge/Thanks For Pages-htr_tech-blue"></code></a>
 <code><a href="https://github.com/A1S0N"><img src="https://img.shields.io/badge/Thanks For Pages-AL1S0N-blue"></code></a>
 <code><a href="https://github.com/tony23x"><img src="https://img.shields.io/badge/Thanks For Banners-Th3_Pr3d4t0r-blue"></code></a>
