@@ -1,0 +1,114 @@
+.main {
+  width: 450px;
+  height: 500px;
+  border: 1px solid #d9dce0;
+  border-radius: 10px;
+}
+
+.main__header {
+  width: 100%;
+  height: 170px;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #141414;
+}
+
+.main__header img {
+  width: 80px;
+}
+
+.main__header .header__title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.main__header .header__subtitle {
+  font-size: 16px;
+}
+
+.main__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__account {
+  width: 82%;
+  margin-bottom: 50px;
+}
+
+.form__account input {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid rgb(196, 197, 202);
+  opacity: 0.6;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.links {
+  color: #2879e6;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form__privacy {
+  width: 82%;
+}
+
+.privacy__description {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.form__create {
+  display: flex;
+  width: 82%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.form__create input {
+  width: 85px;
+  height: 35px;
+  border: none;
+  background-color: #2879e6;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.footer {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer__column .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__column .item {
+  cursor: pointer;
+}
+
+.footer__language {
+  border: none;
+  font-size: 12px;
+  outline: none;
+}

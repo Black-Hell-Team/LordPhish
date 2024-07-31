@@ -2,12 +2,6 @@
 
 red='\e[1;31m'
 
-UnzipFiles(){
-    command -v unzip > /dev/null 2>&1 || { echo >&2 "I require unzip but it's not installed. Install it. Aborting."; exit 1; }
-    printf "\e[1;93m [!] Unzipping files ...!\e[0m\n"
-    sleep 1.9
-    nohup unzip sites.zip > /dev/null &
-}
 smail_banner() {
 printf "\n"
 printf "\n"

