@@ -23,21 +23,13 @@ Centos 8: 4.18.0-147.5.1.el8_1.x86_64
 ### Usage:
 ```
 apt-get update -y
-
 apt-get install php -y
-
 apt-get install openssh -y 
-
 apt-get install wget -y
-
 apt-get install git -y
-
 git clone https://github.com/Black-Hell-Team/LordPhish.git
-
 cd LordPhish
-
 bash setup.sh 
-
 bash lord.sh
 ```
 
