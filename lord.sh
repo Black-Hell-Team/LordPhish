@@ -409,7 +409,6 @@ case $menu_option in
         ;;
 esac
 menu
-fi
 }
 
 stop() {
