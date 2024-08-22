@@ -1,5 +1,5 @@
 <h2>Hi, I'm Gr3n0xX! <img img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
-And I'm create the most complete phishing tool
+And I'm create the most complete phishing tool [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTE.md)
 
  
  
@@ -8,23 +8,17 @@ And I'm create the most complete phishing tool
 <img src="https://img.shields.io/github/forks/Black-Hell-Team/LordPhish?color=teal&style=flat-square">
 
 ## Tested On:
+```
 Android 9: 4.4.111-17263988
-
 Arch 5.11.2 
-
 Debian 9: 4.9.0-8-amd64
-
 Debian 10: 4.19.0-8-amd64
-
 Ubuntu 18.04.1 LTS: 4.15.0-38-generic
-
 Kali Linux: 4.18.0-kali2-amd64
-
 Centos 6.10: 2.6.32-754.6.3.el6.x86_64
-
 Centos 7: 3.10.0-862.3.2.el7.x86_64
-
 Centos 8: 4.18.0-147.5.1.el8_1.x86_64
+```
 
 ### Usage:
 ```
@@ -62,21 +56,11 @@ Aurthor assumes that the users would use lordphish **legally**. Aurthor won't be
 <code><a href="https://youtube.com/channel/UCxTE4c-xqpAqayme5ps560A" target="_blank"><img src="https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg"></a></code>
 
 
-
-### <<< If you copy , Then Give me The Credits >>>
-
-## Features :
-### [+] 54 fake screen options!
-#### [+] Latest Login Pages !
-#### [+] Mask URL Added !
-#### [+] Easy for Beginners !
-
 ## Thanks :
 <code><a href="https://github.com/thelinuxchoice"><img src="https://img.shields.io/badge/Special Thanks-The Linux Choice-blue"></code></a>
 <code><a href="https://github.com/BrunoCiccarino"><img src="https://img.shields.io/badge/Thanks For Me-Gr3n0xX-blue"></code></a>
 <code><a href="https://github.com/htr-tech"><img src="https://img.shields.io/badge/Thanks For Pages-htr_tech-blue"></code></a>
 <code><a href="https://github.com/A1S0N"><img src="https://img.shields.io/badge/Thanks For Pages-AL1S0N-blue"></code></a>
-<code><a href="https://github.com/tony23x"><img src="https://img.shields.io/badge/Thanks For Banners-Th3_Pr3d4t0r-blue"></code></a>
 <code><a href="https://github.com/Zeushx"><img src="https://img.shields.io/badge/Thanks For Help Me-Zeus-blue"></code></a>
 <code><a href="https://github.com/Ignitetch/AdvPhishing"><img src="https://img.shields.io/badge/Thanks For Pages-Ignitetch-blue"></code></a>
 
